@@ -1,15 +1,6 @@
-# Vpeeker Channels
+# Amethyst App
 
-This is the code that originally powered [Vinepeek Channels][]. It is a
-subscription service that allows customers to create their own 'channels' of
-Vines a la [Vinepeek][].
-
-As part of our sunsetting policy, we are open-sourcing the code for the
-community to use and improve upon if anyone wishes to.
-
-**This code, while complete, is rough around the edges as it is more or less a
-direct open-sourcing of a private project. As a result, some quirks may remain
-and the code may not be strictly portable from the environment it was run in.**
+This is the code for the Amethyst App. The app is for creating an viewing vine channels.
 
 ## High level overview
 
@@ -26,7 +17,7 @@ and the code may not be strictly portable from the environment it was run in.**
 
 ## Requirements
 
-Vpeeker Channels requires the following elements:
+Amethyst Channels requires the following elements:
 
  - Ruby 1.9.3.
  - Rails 3.2.
@@ -41,7 +32,7 @@ fuss.
 
 ## Installation notes
 
- - Vpeeker Channels was built to be run on a subdomain. If this isn't the case,
+ - Amethyst Channels was built to be run on a subdomain. If this isn't the case,
    make sure to change `config.action_dispatch.tld_length` back to 1 in
    `config/environemnts/production.rb`.
  - The first user to sign in will be an admin.
@@ -51,12 +42,4 @@ fuss.
 Configuration is done through environment variables. References to these
 variables and their use are in `config/config.yml`.
 
-## Fastspring
 
-Fastspring is used for payment processing. You must set up custom HTTP callback
-notifications within Fastspring. Documentation for these still needs to be
-written, for now look at `subscriptions_controller.rb` and work out what fields
-are used.
-
-[Vinepeek Channels]: http://channels.vinepeek.com
-[Vinepeek]: http://vinepeek.com
